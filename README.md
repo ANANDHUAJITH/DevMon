@@ -83,154 +83,130 @@ Submissions are analyzed using:
 ---
 
 ### 🃏 DevMon Skill Cards
-Every validated task submission mints a **DevMon card**.
+-Every validated task submission mints a **DevMon card**.
 
-**Card Structure:**
+### MVP Rules:
 
-```json''''
-{
-  "card_id": "UUID",
-  "user_id": "UUID",
-  "task_id": "UUID",
-  "rarity": "common | rare | epic | legendary",
-  "score_vector": {
-    "functionality": 30,
-    "quality": 25,
-    "originality": 15,
-    "security": 15,
-    "docs": 10,
-    "git": 5
-  },
-  "hash": "sha256(user_id+task_id+score_vector+secret)",
-  "created_at": "timestamp"
-}
+-One card per user per task
 
-MVP Rules:
+-Hash ensures no forgery
 
-One card per user per task
+-Displays name, score, and rarity
 
-Hash ensures no forgery
+-Leaderboard uses card points
 
-Displays name, score, and rarity
+### Future Enhancements:
 
-Leaderboard uses card points
+-Evolving cards with more tasks
 
-Future Enhancements:
+-Seasonal limited edition cards
 
-Evolving cards with more tasks
+-Optional NFT integration for rare cards
 
-Seasonal limited edition cards
+#### 🏆 Leaderboard
 
-Optional NFT integration for rare cards
+-Tracks top contributors by card points
 
-🏆 Leaderboard
+-Public visibility
 
-Tracks top contributors by card points
+-Early MVP shows top 10
 
-Public visibility
+-Future: seasonal, battle-based, and top ranger recognition
 
-Early MVP shows top 10
+### 🌐 Community Features
 
-Future: seasonal, battle-based, and top ranger recognition
+**** MVP Level:
 
-🌐 Community Features
+-View other users’ public cards
 
-MVP Level:
+-Optional peer review for Task #0
 
-View other users’ public cards
+**** Post-MVP:
 
-Optional peer review for Task #0
+-Mentorship and reviewing
 
-Post-MVP:
+-Team challenges / raids
 
-Mentorship and reviewing
+-Social graph (followers, collaborators)
 
-Team challenges / raids
+-Trust scores influence card multipliers
 
-Social graph (followers, collaborators)
+### 🛠 MVP Technical Architecture
+*** Backend
 
-Trust scores influence card multipliers
+-Node.js + TypeScript
 
-🛠 MVP Technical Architecture
-Backend
+-PostgreSQL database
 
-Node.js + TypeScript
+-Redis for caching & leaderboard
 
-PostgreSQL database
+-REST APIs (future GraphQL optional)
 
-Redis for caching & leaderboard
+**** Services:
 
-REST APIs (future GraphQL optional)
+-GitHub OAuth integration
 
-Services:
+-AI review service
 
-GitHub OAuth integration
+-Card minting & hash signing
 
-AI review service
+-Submission tracking
 
-Card minting & hash signing
+***** Frontend
 
-Submission tracking
+-React / Next.js
 
-Frontend
+-Tailwind CSS for UI
 
-React / Next.js
+**** Pages:
 
-Tailwind CSS for UI
+-Login/Register
 
-Pages:
+-Task submission
 
-Login/Register
+-AI feedback
 
-Task submission
+-Card display
 
-AI feedback
+-Leaderboard
 
-Card display
+*** AI Layer
 
-Leaderboard
+-still thinking
 
-AI Layer
+-Static analysis + linters
 
-GPT-4 / GPT-4o-mini for review
+-Score normalization
 
-Static analysis + linters
+-Optional moderation flag
 
-Score normalization
+*** MVP Flow:
 
-Optional moderation flag
+| User → GitHub Login → Task Submission → AI & Static Analysis → Score & Feedback → Card Minting → Leaderboard Update |
 
-MVP Flow:
+-Security & Anti-Cheat
 
-User → GitHub Login → Task Submission → AI & Static Analysis → Score & Feedback → Card Minting → Leaderboard Update
+-One account per GitHub
 
-Security & Anti-Cheat
+-Duplicate submission detection
 
-One account per GitHub
+-Commit history validation
 
-Duplicate submission detection
+-AI plagiarism detection
 
-Commit history validation
+-Server-side hash signing for cards
 
-AI plagiarism detection
 
-Server-side hash signing for cards
 
-Future:
+### 🧩 Gamification & Progression
 
-Blockchain-based minting (Polygon / Solana)
+| Task points → DevMon card rarity → Leaderboard ranking |
 
-Transparent public point ledger
+-Rare cards limited per season
 
-🧩 Gamification & Progression
+-Future: battle system, card evolution, seasonal events
 
-Task points → DevMon card rarity → Leaderboard ranking
-
-Rare cards limited per season
-
-Future: battle system, card evolution, seasonal events
-
-Points & ranks are earned, not bought
+-Points & ranks are earned, not bought
 
 📁 Repository Structure
 devmon/
@@ -259,22 +235,15 @@ devmon/
     ├── seedTasks.ts
     └── verifyCard.ts
 
-🕒 MVP Timeline
-Week	Milestone
-1	Repo + Vision + GitHub OAuth
-2	Task #0 submission pipeline
-3	AI review integration
-4	Card minting + leaderboard
-5	Closed alpha testing (5–10 users)
-6	Feedback iteration & documentation
-🧪 Future Improvements
 
-Multi-language support
+### 🧪 Future Improvements
 
-Adaptive AI question/task generation
+-Multi-language support
 
-Battle mode & raids
+-Adaptive AI question/task generation
 
-Seasonal limited edition DevMon cards
+-Battle mode & raids
 
-Mentorship & community trust
+-Seasonal limited edition DevMon cards
+
+-Mentorship & community trust
