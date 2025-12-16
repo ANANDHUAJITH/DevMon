@@ -167,6 +167,7 @@ Submissions are analyzed using:
 ---
 
 ### 📁 Repository Structure
+
 devmon/
 ├── README.md
 ├── VISION.md
@@ -175,23 +176,23 @@ devmon/
 ├── .gitignore
 ├── .env.example
 ├── docs/
-│ ├── user.md
-│ ├── task.md
-│ ├── card.md
-│ └── scoring.md
+│   ├── user.md
+│   ├── task.md
+│   ├── card.md
+│   └── scoring.md
 ├── backend/
-│ ├── src/
-│ │ ├── index.ts
-│ │ ├── routes/
-│ │ ├── services/
-│ │ └── models/
-│ └── package.json
+│   ├── src/
+│   │   ├── index.ts
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── models/
+│   └── package.json
 ├── frontend/
-│ ├── pages/
-│ └── package.json
+│   ├── pages/
+│   └── package.json
 └── scripts/
-├── seedTasks.ts
-└── verifyCard.ts
+    ├── seedTasks.ts
+    └── verifyCard.ts
 
 
 ---
