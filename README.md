@@ -196,6 +196,107 @@ devmon/
 
 
 ---
+# DevMon Project TODO
+
+## Core Features
+
+### Authentication & Profiles
+- [ ] GitHub OAuth integration setup
+- [ ] User profile pages with bio, skills, and verified cards
+- [ ] Follow/follower system
+- [ ] User settings and profile editing
+
+### Feed & Social
+- [ ] Professional feed displaying projects, challenges, and achievements
+- [ ] Persistent post system (not ephemeral)
+- [ ] Post creation and editing
+- [ ] Like/comment system on posts
+
+### GitHub Integration
+- [ ] GitHub repository submission system
+- [ ] DevMon config file (devmon.yaml) validation
+- [ ] Repository verification and metadata extraction
+- [ ] Commit history and activity verification
+
+### Challenges System
+- [ ] Algorithm challenge creation and management
+- [ ] System design challenges
+- [ ] CSS/UI pixel-perfect visual challenges
+- [ ] Difficulty tier system
+- [ ] Time-boxed challenge mechanics
+- [ ] Challenge submission handling
+
+### AI Evaluation System
+- [ ] LLM integration for code evaluation
+- [ ] Scoring on correctness, code quality, architecture, readability, security, originality
+- [ ] Transparent and explainable scoring feedback
+- [ ] Custom review criteria per competition host
+
+### DevMon Card System
+- [ ] Card rarity levels (Common, Uncommon, Rare, Epic, Legendary)
+- [ ] Card generation based on verified skills
+- [ ] Card collection and inventory
+- [ ] Limited supply mechanics for each rarity
+- [ ] Card trading/marketplace (future)
+
+### Competition System
+- [ ] ComCert points system
+- [ ] Developer battle system (1v1 and group)
+- [ ] Point staking mechanics
+- [ ] Battle result tracking
+
+### Leaderboards & Rankings
+- [ ] Global leaderboard
+- [ ] Category-wise leaderboards (Web, Embedded, Security, UI/CSS)
+- [ ] Seasonal leaderboards with resets
+- [ ] Top player homepage features
+
+### Notifications
+- [ ] Real-time in-app notifications
+- [ ] Email notifications for battles
+- [ ] Battle challenge notifications
+- [ ] Battle start notifications
+- [ ] Battle result notifications
+
+### UI/UX
+- [ ] Instagram-inspired design system
+- [ ] Professional minimal aesthetic
+- [ ] Grid-style layout with varied flexbox components
+- [ ] Elegant rounded corners
+- [ ] Dark/light theme support
+- [ ] Responsive design
+
+## Database Schema
+- [ ] Users table with GitHub integration
+- [ ] Profiles table
+- [ ] Follow relationships
+- [ ] Posts table
+- [ ] Challenges table
+- [ ] Submissions table
+- [ ] DevMon cards table
+- [ ] User card inventory
+- [ ] ComCert points tracking
+- [ ] Battles table
+- [ ] Leaderboards table
+- [ ] Notifications table
+
+## API & Backend
+- [ ] tRPC procedures for all features
+- [ ] GitHub API integration
+- [ ] LLM integration for scoring
+- [ ] Email service integration
+- [ ] Real-time notification system
+
+## Testing
+- [ ] Unit tests for core logic
+- [ ] Integration tests for API endpoints
+- [ ] E2E tests for user flows
+
+## Deployment
+- [ ] Environment configuration
+- [ ] Database migrations
+- [ ] Production deployment
+
 
 ### 🧪 Future Improvements
 - Multi-language support  
